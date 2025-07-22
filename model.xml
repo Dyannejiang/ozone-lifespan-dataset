@@ -1,0 +1,1193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<COBWEB2Config cobweb-version="2.2017-04-21-66-g57599c4-modified (master) 2021-08-26-17:58" config-version="2017-03-15" xmlns="http://cobweb.ca/schema/cobweb2/config">
+  <AgentTypeCount>4</AgentTypeCount>
+  <ControllerName>org.cobweb.cobweb2.impl.ai.GeneticController</ControllerName>
+  <AgentLabel>Agent</AgentLabel>
+  <randomSeed>32576</randomSeed>
+  <EnvironmentName>org.cobweb.cobweb2.impl.ComplexEnvironment</EnvironmentName>
+  <keepOldArray>false</keepOldArray>
+  <keepOldDrops>false</keepOldDrops>
+  <keepOldAgents>false</keepOldAgents>
+  <spawnNewAgents>true</spawnNewAgents>
+  <keepOldPackets>false</keepOldPackets>
+  <Environment>
+    <Width>50</Width>
+    <Height>50</Height>
+    <wrap>true</wrap>
+    <wrapX>false</wrapX>
+    <wrapY>false</wrapY>
+    <randomStones>0</randomStones>
+  </Environment>
+  <Abiotic>
+    <Factors>
+      <Factor class="org.cobweb.cobweb2.plugins.abiotic.Island" id="1">
+        <center>1.0</center>
+        <outside>0.0</outside>
+        <sizeX>0.75</sizeX>
+        <sizeY>0.75</sizeY>
+        <positionX>0.5</positionX>
+        <positionY>0.5</positionY>
+        <transition>0.15</transition>
+        <punishOrBarrier>true</punishOrBarrier>
+      </Factor>
+      <Factor class="org.cobweb.cobweb2.plugins.abiotic.VerticalBands" id="2">
+        <Bands>
+          <Band id="1">0.0</Band>
+          <Band id="2">1.0</Band>
+          <Band id="3">0.0</Band>
+        </Bands>
+        <punishOrBarrier>true</punishOrBarrier>
+      </Factor>
+    </Factors>
+    <AgentParams>
+      <Agend id="1">
+        <FactorParams>
+          <Factor id="1">
+            <PreferedValue>0.0</PreferedValue>
+            <PreferedRange>0.0</PreferedRange>
+            <DifferenceFactor>0.0</DifferenceFactor>
+            <Parameter>None</Parameter>
+          </Factor>
+          <Factor id="2">
+            <PreferedValue>1.0</PreferedValue>
+            <PreferedRange>0.0</PreferedRange>
+            <DifferenceFactor>100.0</DifferenceFactor>
+            <Parameter>StepEnergy</Parameter>
+          </Factor>
+        </FactorParams>
+      </Agend>
+      <Agend id="2">
+        <FactorParams>
+          <Factor id="1">
+            <PreferedValue>0.0</PreferedValue>
+            <PreferedRange>0.0</PreferedRange>
+            <DifferenceFactor>175.0</DifferenceFactor>
+            <Parameter>StepEnergy</Parameter>
+          </Factor>
+          <Factor id="2">
+            <PreferedValue>0.0</PreferedValue>
+            <PreferedRange>0.0</PreferedRange>
+            <DifferenceFactor>0.0</DifferenceFactor>
+            <Parameter>None</Parameter>
+          </Factor>
+        </FactorParams>
+      </Agend>
+      <Agend id="3">
+        <FactorParams>
+          <Factor id="1">
+            <PreferedValue>0.0</PreferedValue>
+            <PreferedRange>0.0</PreferedRange>
+            <DifferenceFactor>0.0</DifferenceFactor>
+            <Parameter>None</Parameter>
+          </Factor>
+          <Factor id="2">
+            <PreferedValue>0.0</PreferedValue>
+            <PreferedRange>0.0</PreferedRange>
+            <DifferenceFactor>0.0</DifferenceFactor>
+            <Parameter>None</Parameter>
+          </Factor>
+        </FactorParams>
+      </Agend>
+      <Agend id="4">
+        <FactorParams>
+          <Factor id="1">
+            <PreferedValue>0.0</PreferedValue>
+            <PreferedRange>0.0</PreferedRange>
+            <DifferenceFactor>175.0</DifferenceFactor>
+            <Parameter>StepEnergy</Parameter>
+          </Factor>
+          <Factor id="2">
+            <PreferedValue>0.0</PreferedValue>
+            <PreferedRange>0.0</PreferedRange>
+            <DifferenceFactor>0.0</DifferenceFactor>
+            <Parameter>None</Parameter>
+          </Factor>
+        </FactorParams>
+      </Agend>
+    </AgentParams>
+  </Abiotic>
+  <Swarm>
+    <AgentParams>
+      <Agend id="1">
+        <Effects>
+          <Agent id="1">
+            <radius>0.0</radius>
+            <countMin>1</countMin>
+            <countPeak1>3</countPeak1>
+            <factorPeak1>1.1</factorPeak1>
+            <countPeak2>10</countPeak2>
+            <factorPeak2>1.2</factorPeak2>
+            <countMax>15</countMax>
+            <parameter>None</parameter>
+          </Agent>
+          <Agent id="2">
+            <radius>0.0</radius>
+            <countMin>1</countMin>
+            <countPeak1>3</countPeak1>
+            <factorPeak1>1.1</factorPeak1>
+            <countPeak2>10</countPeak2>
+            <factorPeak2>1.2</factorPeak2>
+            <countMax>15</countMax>
+            <parameter>None</parameter>
+          </Agent>
+          <Agent id="3">
+            <radius>0.0</radius>
+            <countMin>1</countMin>
+            <countPeak1>3</countPeak1>
+            <factorPeak1>1.1</factorPeak1>
+            <countPeak2>10</countPeak2>
+            <factorPeak2>1.2</factorPeak2>
+            <countMax>15</countMax>
+            <parameter>None</parameter>
+          </Agent>
+          <Agent id="4">
+            <radius>0.0</radius>
+            <countMin>1</countMin>
+            <countPeak1>3</countPeak1>
+            <factorPeak1>1.1</factorPeak1>
+            <countPeak2>10</countPeak2>
+            <factorPeak2>1.2</factorPeak2>
+            <countMax>15</countMax>
+            <parameter>None</parameter>
+          </Agent>
+        </Effects>
+      </Agend>
+      <Agend id="2">
+        <Effects>
+          <Agent id="1">
+            <radius>0.0</radius>
+            <countMin>1</countMin>
+            <countPeak1>3</countPeak1>
+            <factorPeak1>1.1</factorPeak1>
+            <countPeak2>10</countPeak2>
+            <factorPeak2>1.2</factorPeak2>
+            <countMax>15</countMax>
+            <parameter>None</parameter>
+          </Agent>
+          <Agent id="2">
+            <radius>0.0</radius>
+            <countMin>1</countMin>
+            <countPeak1>3</countPeak1>
+            <factorPeak1>1.1</factorPeak1>
+            <countPeak2>10</countPeak2>
+            <factorPeak2>1.2</factorPeak2>
+            <countMax>15</countMax>
+            <parameter>None</parameter>
+          </Agent>
+          <Agent id="3">
+            <radius>0.0</radius>
+            <countMin>1</countMin>
+            <countPeak1>3</countPeak1>
+            <factorPeak1>1.1</factorPeak1>
+            <countPeak2>10</countPeak2>
+            <factorPeak2>1.2</factorPeak2>
+            <countMax>15</countMax>
+            <parameter>None</parameter>
+          </Agent>
+          <Agent id="4">
+            <radius>0.0</radius>
+            <countMin>1</countMin>
+            <countPeak1>3</countPeak1>
+            <factorPeak1>1.1</factorPeak1>
+            <countPeak2>10</countPeak2>
+            <factorPeak2>1.2</factorPeak2>
+            <countMax>15</countMax>
+            <parameter>None</parameter>
+          </Agent>
+        </Effects>
+      </Agend>
+      <Agend id="3">
+        <Effects>
+          <Agent id="1">
+            <radius>0.0</radius>
+            <countMin>1</countMin>
+            <countPeak1>3</countPeak1>
+            <factorPeak1>1.1</factorPeak1>
+            <countPeak2>10</countPeak2>
+            <factorPeak2>1.2</factorPeak2>
+            <countMax>15</countMax>
+            <parameter>None</parameter>
+          </Agent>
+          <Agent id="2">
+            <radius>0.0</radius>
+            <countMin>1</countMin>
+            <countPeak1>3</countPeak1>
+            <factorPeak1>1.1</factorPeak1>
+            <countPeak2>10</countPeak2>
+            <factorPeak2>1.2</factorPeak2>
+            <countMax>15</countMax>
+            <parameter>None</parameter>
+          </Agent>
+          <Agent id="3">
+            <radius>0.0</radius>
+            <countMin>1</countMin>
+            <countPeak1>3</countPeak1>
+            <factorPeak1>1.1</factorPeak1>
+            <countPeak2>10</countPeak2>
+            <factorPeak2>1.2</factorPeak2>
+            <countMax>15</countMax>
+            <parameter>None</parameter>
+          </Agent>
+          <Agent id="4">
+            <radius>0.0</radius>
+            <countMin>1</countMin>
+            <countPeak1>3</countPeak1>
+            <factorPeak1>1.1</factorPeak1>
+            <countPeak2>10</countPeak2>
+            <factorPeak2>1.2</factorPeak2>
+            <countMax>15</countMax>
+            <parameter>None</parameter>
+          </Agent>
+        </Effects>
+      </Agend>
+      <Agend id="4">
+        <Effects>
+          <Agent id="1">
+            <radius>0.0</radius>
+            <countMin>1</countMin>
+            <countPeak1>3</countPeak1>
+            <factorPeak1>1.1</factorPeak1>
+            <countPeak2>10</countPeak2>
+            <factorPeak2>1.2</factorPeak2>
+            <countMax>15</countMax>
+            <parameter>None</parameter>
+          </Agent>
+          <Agent id="2">
+            <radius>0.0</radius>
+            <countMin>1</countMin>
+            <countPeak1>3</countPeak1>
+            <factorPeak1>1.1</factorPeak1>
+            <countPeak2>10</countPeak2>
+            <factorPeak2>1.2</factorPeak2>
+            <countMax>15</countMax>
+            <parameter>None</parameter>
+          </Agent>
+          <Agent id="3">
+            <radius>0.0</radius>
+            <countMin>1</countMin>
+            <countPeak1>3</countPeak1>
+            <factorPeak1>1.1</factorPeak1>
+            <countPeak2>10</countPeak2>
+            <factorPeak2>1.2</factorPeak2>
+            <countMax>15</countMax>
+            <parameter>None</parameter>
+          </Agent>
+          <Agent id="4">
+            <radius>0.0</radius>
+            <countMin>1</countMin>
+            <countPeak1>3</countPeak1>
+            <factorPeak1>1.1</factorPeak1>
+            <countPeak2>10</countPeak2>
+            <factorPeak2>1.2</factorPeak2>
+            <countMax>15</countMax>
+            <parameter>None</parameter>
+          </Agent>
+        </Effects>
+      </Agend>
+    </AgentParams>
+  </Swarm>
+  <Agents>
+    <AgentParams>
+      <Agend id="1">
+        <Agents>100</Agents>
+        <FoodEnergy>125</FoodEnergy>
+        <OtherFoodEnergy>0</OtherFoodEnergy>
+        <AgentFoodEnergyFraction>10.0</AgentFoodEnergyFraction>
+        <aggressiveMode>false</aggressiveMode>
+        <enthusiasticMode>false</enthusiasticMode>
+        <enthusiasticEnergyCost>5</enthusiasticEnergyCost>
+        <EnthusiasticEnergyBased>false</EnthusiasticEnergyBased>
+        <EnthusiasticFixedRange>20</EnthusiasticFixedRange>
+        <BreedEnergy>100</BreedEnergy>
+        <pregnancyPeriod>0</pregnancyPeriod>
+        <InitEnergy>300</InitEnergy>
+        <StepEnergy>1</StepEnergy>
+        <StepRockEnergy>10</StepRockEnergy>
+        <StepAgentEnergy>2</StepAgentEnergy>
+        <TurnRightEnergy>1</TurnRightEnergy>
+        <TurnLeftEnergy>1</TurnLeftEnergy>
+        <MutationRate>0.0</MutationRate>
+        <commSimMin>0</commSimMin>
+        <sexualBreedChance>0.0</sexualBreedChance>
+        <asexualBreedChance>1.0</asexualBreedChance>
+        <breedSimMin>1.0</breedSimMin>
+        <sexualPregnancyPeriod>0</sexualPregnancyPeriod>
+        <agingMode>false</agingMode>
+        <agingLimit>30</agingLimit>
+        <agingRate>1.0</agingRate>
+        <pdMemorySize>10</pdMemorySize>
+        <broadcastMode>false</broadcastMode>
+        <broadcastEnergyBased>false</broadcastEnergyBased>
+        <broadcastFixedRange>20</broadcastFixedRange>
+        <broadcastEnergyMin>20</broadcastEnergyMin>
+        <broadcastEnergyCost>5</broadcastEnergyCost>
+        <broadcastSameTypeOnly>false</broadcastSameTypeOnly>
+        <broadcastMinSimilarity>0.0</broadcastMinSimilarity>
+        <partnerType>-1</partnerType>
+        <childType>-1</childType>
+        <ProbGiveBirthToOtherType>1.0</ProbGiveBirthToOtherType>
+        <agentMovementSpeed>1.0</agentMovementSpeed>
+        <splitChance>0.0</splitChance>
+        <SplitEnergyThreshold>60</SplitEnergyThreshold>
+        <SplitEnergyRatio>[0.5, 0.5]</SplitEnergyRatio>
+        <foodweb>
+          <agent id="1">false</agent>
+          <agent id="2">false</agent>
+          <agent id="3">false</agent>
+          <agent id="4">false</agent>
+          <food id="1">true</food>
+          <food id="2">false</food>
+          <food id="3">false</food>
+          <food id="4">false</food>
+        </foodweb>
+      </Agend>
+      <Agend id="2">
+        <Agents>100</Agents>
+        <FoodEnergy>220</FoodEnergy>
+        <OtherFoodEnergy>0</OtherFoodEnergy>
+        <AgentFoodEnergyFraction>10.0</AgentFoodEnergyFraction>
+        <aggressiveMode>false</aggressiveMode>
+        <enthusiasticMode>false</enthusiasticMode>
+        <enthusiasticEnergyCost>5</enthusiasticEnergyCost>
+        <EnthusiasticEnergyBased>false</EnthusiasticEnergyBased>
+        <EnthusiasticFixedRange>20</EnthusiasticFixedRange>
+        <BreedEnergy>60</BreedEnergy>
+        <pregnancyPeriod>0</pregnancyPeriod>
+        <InitEnergy>500</InitEnergy>
+        <StepEnergy>1</StepEnergy>
+        <StepRockEnergy>10</StepRockEnergy>
+        <StepAgentEnergy>2</StepAgentEnergy>
+        <TurnRightEnergy>1</TurnRightEnergy>
+        <TurnLeftEnergy>1</TurnLeftEnergy>
+        <MutationRate>0.0</MutationRate>
+        <commSimMin>0</commSimMin>
+        <sexualBreedChance>0.0</sexualBreedChance>
+        <asexualBreedChance>1.0</asexualBreedChance>
+        <breedSimMin>1.0</breedSimMin>
+        <sexualPregnancyPeriod>0</sexualPregnancyPeriod>
+        <agingMode>false</agingMode>
+        <agingLimit>30</agingLimit>
+        <agingRate>1.0</agingRate>
+        <pdMemorySize>10</pdMemorySize>
+        <broadcastMode>false</broadcastMode>
+        <broadcastEnergyBased>false</broadcastEnergyBased>
+        <broadcastFixedRange>20</broadcastFixedRange>
+        <broadcastEnergyMin>20</broadcastEnergyMin>
+        <broadcastEnergyCost>5</broadcastEnergyCost>
+        <broadcastSameTypeOnly>false</broadcastSameTypeOnly>
+        <broadcastMinSimilarity>0.0</broadcastMinSimilarity>
+        <partnerType>-1</partnerType>
+        <childType>-1</childType>
+        <ProbGiveBirthToOtherType>1.0</ProbGiveBirthToOtherType>
+        <agentMovementSpeed>1.0</agentMovementSpeed>
+        <splitChance>0.0</splitChance>
+        <SplitEnergyThreshold>60</SplitEnergyThreshold>
+        <SplitEnergyRatio>[0.5, 0.5]</SplitEnergyRatio>
+        <foodweb>
+          <agent id="1">false</agent>
+          <agent id="2">false</agent>
+          <agent id="3">false</agent>
+          <agent id="4">false</agent>
+          <food id="1">false</food>
+          <food id="2">true</food>
+          <food id="3">false</food>
+          <food id="4">false</food>
+        </foodweb>
+      </Agend>
+      <Agend id="3">
+        <Agents>1</Agents>
+        <FoodEnergy>50</FoodEnergy>
+        <OtherFoodEnergy>0</OtherFoodEnergy>
+        <AgentFoodEnergyFraction>100.0</AgentFoodEnergyFraction>
+        <aggressiveMode>false</aggressiveMode>
+        <enthusiasticMode>false</enthusiasticMode>
+        <enthusiasticEnergyCost>5</enthusiasticEnergyCost>
+        <EnthusiasticEnergyBased>false</EnthusiasticEnergyBased>
+        <EnthusiasticFixedRange>20</EnthusiasticFixedRange>
+        <BreedEnergy>60</BreedEnergy>
+        <pregnancyPeriod>0</pregnancyPeriod>
+        <InitEnergy>750</InitEnergy>
+        <StepEnergy>2</StepEnergy>
+        <StepRockEnergy>10</StepRockEnergy>
+        <StepAgentEnergy>2</StepAgentEnergy>
+        <TurnRightEnergy>1</TurnRightEnergy>
+        <TurnLeftEnergy>1</TurnLeftEnergy>
+        <MutationRate>0.0</MutationRate>
+        <commSimMin>0</commSimMin>
+        <sexualBreedChance>0.0</sexualBreedChance>
+        <asexualBreedChance>0.0</asexualBreedChance>
+        <breedSimMin>0.0</breedSimMin>
+        <sexualPregnancyPeriod>0</sexualPregnancyPeriod>
+        <agingMode>false</agingMode>
+        <agingLimit>30</agingLimit>
+        <agingRate>1.0</agingRate>
+        <pdMemorySize>10</pdMemorySize>
+        <broadcastMode>false</broadcastMode>
+        <broadcastEnergyBased>false</broadcastEnergyBased>
+        <broadcastFixedRange>20</broadcastFixedRange>
+        <broadcastEnergyMin>20</broadcastEnergyMin>
+        <broadcastEnergyCost>5</broadcastEnergyCost>
+        <broadcastSameTypeOnly>false</broadcastSameTypeOnly>
+        <broadcastMinSimilarity>0.0</broadcastMinSimilarity>
+        <partnerType>-1</partnerType>
+        <childType>-1</childType>
+        <ProbGiveBirthToOtherType>1.0</ProbGiveBirthToOtherType>
+        <agentMovementSpeed>1.0</agentMovementSpeed>
+        <splitChance>1.0</splitChance>
+        <SplitEnergyThreshold>750</SplitEnergyThreshold>
+        <SplitEnergyRatio>[0.5, 0.5]</SplitEnergyRatio>
+        <foodweb>
+          <agent id="1">false</agent>
+          <agent id="2">false</agent>
+          <agent id="3">false</agent>
+          <agent id="4">false</agent>
+          <food id="1">false</food>
+          <food id="2">false</food>
+          <food id="3">true</food>
+          <food id="4">false</food>
+        </foodweb>
+      </Agend>
+      <Agend id="4">
+        <Agents>100</Agents>
+        <FoodEnergy>230</FoodEnergy>
+        <OtherFoodEnergy>0</OtherFoodEnergy>
+        <AgentFoodEnergyFraction>10.0</AgentFoodEnergyFraction>
+        <aggressiveMode>false</aggressiveMode>
+        <enthusiasticMode>false</enthusiasticMode>
+        <enthusiasticEnergyCost>5</enthusiasticEnergyCost>
+        <EnthusiasticEnergyBased>false</EnthusiasticEnergyBased>
+        <EnthusiasticFixedRange>20</EnthusiasticFixedRange>
+        <BreedEnergy>60</BreedEnergy>
+        <pregnancyPeriod>0</pregnancyPeriod>
+        <InitEnergy>500</InitEnergy>
+        <StepEnergy>1</StepEnergy>
+        <StepRockEnergy>10</StepRockEnergy>
+        <StepAgentEnergy>2</StepAgentEnergy>
+        <TurnRightEnergy>1</TurnRightEnergy>
+        <TurnLeftEnergy>1</TurnLeftEnergy>
+        <MutationRate>0.0</MutationRate>
+        <commSimMin>0</commSimMin>
+        <sexualBreedChance>0.0</sexualBreedChance>
+        <asexualBreedChance>1.0</asexualBreedChance>
+        <breedSimMin>1.0</breedSimMin>
+        <sexualPregnancyPeriod>0</sexualPregnancyPeriod>
+        <agingMode>false</agingMode>
+        <agingLimit>30</agingLimit>
+        <agingRate>1.0</agingRate>
+        <pdMemorySize>10</pdMemorySize>
+        <broadcastMode>false</broadcastMode>
+        <broadcastEnergyBased>false</broadcastEnergyBased>
+        <broadcastFixedRange>20</broadcastFixedRange>
+        <broadcastEnergyMin>20</broadcastEnergyMin>
+        <broadcastEnergyCost>5</broadcastEnergyCost>
+        <broadcastSameTypeOnly>false</broadcastSameTypeOnly>
+        <broadcastMinSimilarity>0.0</broadcastMinSimilarity>
+        <partnerType>-1</partnerType>
+        <childType>-1</childType>
+        <ProbGiveBirthToOtherType>1.0</ProbGiveBirthToOtherType>
+        <agentMovementSpeed>1.0</agentMovementSpeed>
+        <splitChance>0.0</splitChance>
+        <SplitEnergyThreshold>60</SplitEnergyThreshold>
+        <SplitEnergyRatio>[0.5, 0.5]</SplitEnergyRatio>
+        <foodweb>
+          <agent id="1">false</agent>
+          <agent id="2">false</agent>
+          <agent id="3">false</agent>
+          <agent id="4">false</agent>
+          <food id="1">false</food>
+          <food id="2">false</food>
+          <food id="3">false</food>
+          <food id="4">true</food>
+        </foodweb>
+      </Agend>
+    </AgentParams>
+  </Agents>
+  <FoodGrowth>
+    <dropNewFood>true</dropNewFood>
+    <likeFoodProb>0.0</likeFoodProb>
+    <FoodParams>
+      <Food id="1">
+        <Food>20</Food>
+        <FoodRate>0.0</FoodRate>
+        <FoodGrow>5</FoodGrow>
+        <FoodDeplete>0.9</FoodDeplete>
+        <DepleteTimeSteps>40</DepleteTimeSteps>
+        <DraughtPeriod>0</DraughtPeriod>
+        <AbioticParams>
+          <FactorParams>
+            <Factor id="1">
+              <PreferedValue>0.0</PreferedValue>
+              <PreferedRange>0.0</PreferedRange>
+              <DifferenceFactor>0.0</DifferenceFactor>
+            </Factor>
+            <Factor id="2">
+              <PreferedValue>0.0</PreferedValue>
+              <PreferedRange>0.0</PreferedRange>
+              <DifferenceFactor>0.0</DifferenceFactor>
+            </Factor>
+          </FactorParams>
+        </AbioticParams>
+      </Food>
+      <Food id="2">
+        <Food>20</Food>
+        <FoodRate>0.0</FoodRate>
+        <FoodGrow>5</FoodGrow>
+        <FoodDeplete>0.9</FoodDeplete>
+        <DepleteTimeSteps>40</DepleteTimeSteps>
+        <DraughtPeriod>0</DraughtPeriod>
+        <AbioticParams>
+          <FactorParams>
+            <Factor id="1">
+              <PreferedValue>0.0</PreferedValue>
+              <PreferedRange>0.0</PreferedRange>
+              <DifferenceFactor>0.0</DifferenceFactor>
+            </Factor>
+            <Factor id="2">
+              <PreferedValue>0.0</PreferedValue>
+              <PreferedRange>0.0</PreferedRange>
+              <DifferenceFactor>0.0</DifferenceFactor>
+            </Factor>
+          </FactorParams>
+        </AbioticParams>
+      </Food>
+      <Food id="3">
+        <Food>20</Food>
+        <FoodRate>0.0</FoodRate>
+        <FoodGrow>12</FoodGrow>
+        <FoodDeplete>0.9</FoodDeplete>
+        <DepleteTimeSteps>40</DepleteTimeSteps>
+        <DraughtPeriod>0</DraughtPeriod>
+        <AbioticParams>
+          <FactorParams>
+            <Factor id="1">
+              <PreferedValue>0.0</PreferedValue>
+              <PreferedRange>0.0</PreferedRange>
+              <DifferenceFactor>0.0</DifferenceFactor>
+            </Factor>
+            <Factor id="2">
+              <PreferedValue>0.0</PreferedValue>
+              <PreferedRange>0.0</PreferedRange>
+              <DifferenceFactor>0.0</DifferenceFactor>
+            </Factor>
+          </FactorParams>
+        </AbioticParams>
+      </Food>
+      <Food id="4">
+        <Food>20</Food>
+        <FoodRate>0.0</FoodRate>
+        <FoodGrow>5</FoodGrow>
+        <FoodDeplete>0.9</FoodDeplete>
+        <DepleteTimeSteps>40</DepleteTimeSteps>
+        <DraughtPeriod>0</DraughtPeriod>
+        <AbioticParams>
+          <FactorParams>
+            <Factor id="1">
+              <PreferedValue>0.0</PreferedValue>
+              <PreferedRange>0.0</PreferedRange>
+              <DifferenceFactor>0.0</DifferenceFactor>
+            </Factor>
+            <Factor id="2">
+              <PreferedValue>0.0</PreferedValue>
+              <PreferedRange>0.0</PreferedRange>
+              <DifferenceFactor>0.0</DifferenceFactor>
+            </Factor>
+          </FactorParams>
+        </AbioticParams>
+      </Food>
+    </FoodParams>
+  </FoodGrowth>
+  <PrisonersDilemma>
+    <enable>true</enable>
+    <temptation>20</temptation>
+    <reward>10</reward>
+    <punishment>0</punishment>
+    <sucker>-5</sucker>
+    <AgentParams>
+      <Agend id="1">
+        <pdEnabled>false</pdEnabled>
+        <pdTitForTat>false</pdTitForTat>
+        <pdCoopProb>50</pdCoopProb>
+        <pdSimilaritySlope>0.0</pdSimilaritySlope>
+        <pdSimilarityNeutral>0.9</pdSimilarityNeutral>
+      </Agend>
+      <Agend id="2">
+        <pdEnabled>false</pdEnabled>
+        <pdTitForTat>false</pdTitForTat>
+        <pdCoopProb>50</pdCoopProb>
+        <pdSimilaritySlope>0.0</pdSimilaritySlope>
+        <pdSimilarityNeutral>0.9</pdSimilarityNeutral>
+      </Agend>
+      <Agend id="3">
+        <pdEnabled>false</pdEnabled>
+        <pdTitForTat>false</pdTitForTat>
+        <pdCoopProb>50</pdCoopProb>
+        <pdSimilaritySlope>0.0</pdSimilaritySlope>
+        <pdSimilarityNeutral>0.9</pdSimilarityNeutral>
+      </Agend>
+      <Agend id="4">
+        <pdEnabled>false</pdEnabled>
+        <pdTitForTat>false</pdTitForTat>
+        <pdCoopProb>50</pdCoopProb>
+        <pdSimilaritySlope>0.0</pdSimilaritySlope>
+        <pdSimilarityNeutral>0.9</pdSimilarityNeutral>
+      </Agend>
+    </AgentParams>
+  </PrisonersDilemma>
+  <Waste>
+    <AgentParams>
+      <Agend id="1">
+        <wasteMode>false</wasteMode>
+        <canConsume>
+          <waste id="1">false</waste>
+          <waste id="2">false</waste>
+          <waste id="3">false</waste>
+          <waste id="4">false</waste>
+        </canConsume>
+        <wasteConsumptionEnergy>0</wasteConsumptionEnergy>
+        <wastePen>2</wastePen>
+        <wasteGain>100</wasteGain>
+        <wasteLoss>0</wasteLoss>
+        <wasteRate>0.5</wasteRate>
+        <wasteInit>100</wasteInit>
+      </Agend>
+      <Agend id="2">
+        <wasteMode>false</wasteMode>
+        <canConsume>
+          <waste id="1">false</waste>
+          <waste id="2">false</waste>
+          <waste id="3">false</waste>
+          <waste id="4">false</waste>
+        </canConsume>
+        <wasteConsumptionEnergy>0</wasteConsumptionEnergy>
+        <wastePen>2</wastePen>
+        <wasteGain>100</wasteGain>
+        <wasteLoss>0</wasteLoss>
+        <wasteRate>0.5</wasteRate>
+        <wasteInit>100</wasteInit>
+      </Agend>
+      <Agend id="3">
+        <wasteMode>false</wasteMode>
+        <canConsume>
+          <waste id="1">false</waste>
+          <waste id="2">false</waste>
+          <waste id="3">false</waste>
+          <waste id="4">false</waste>
+        </canConsume>
+        <wasteConsumptionEnergy>0</wasteConsumptionEnergy>
+        <wastePen>2</wastePen>
+        <wasteGain>100</wasteGain>
+        <wasteLoss>0</wasteLoss>
+        <wasteRate>0.5</wasteRate>
+        <wasteInit>100</wasteInit>
+      </Agend>
+      <Agend id="4">
+        <wasteMode>false</wasteMode>
+        <canConsume>
+          <waste id="1">false</waste>
+          <waste id="2">false</waste>
+          <waste id="3">false</waste>
+          <waste id="4">false</waste>
+        </canConsume>
+        <wasteConsumptionEnergy>0</wasteConsumptionEnergy>
+        <wastePen>2</wastePen>
+        <wasteGain>100</wasteGain>
+        <wasteLoss>0</wasteLoss>
+        <wasteRate>0.5</wasteRate>
+        <wasteInit>100</wasteInit>
+      </Agend>
+    </AgentParams>
+  </Waste>
+  <Production>
+    <AgentParams>
+      <Agend id="1">
+        <productionMode>false</productionMode>
+        <productionCost>0</productionCost>
+        <productPrice>0</productPrice>
+        <maxUnsold>100</maxUnsold>
+        <productExpiry>1000</productExpiry>
+        <productEffect>
+          <parameter>None</parameter>
+          <factor>1.1</factor>
+          <duration>100</duration>
+        </productEffect>
+        <InitProdChance>0.8</InitProdChance>
+        <LowDemThresh>5.0</LowDemThresh>
+        <LowDemProdChance>0.001</LowDemProdChance>
+        <SweetDemThresh>6.0</SweetDemThresh>
+        <SweetDemStartChance>0.001</SweetDemStartChance>
+        <HiDemCutoff>20.0</HiDemCutoff>
+        <HiDemProdChance>0.001</HiDemProdChance>
+      </Agend>
+      <Agend id="2">
+        <productionMode>false</productionMode>
+        <productionCost>0</productionCost>
+        <productPrice>0</productPrice>
+        <maxUnsold>100</maxUnsold>
+        <productExpiry>1000</productExpiry>
+        <productEffect>
+          <parameter>None</parameter>
+          <factor>1.1</factor>
+          <duration>100</duration>
+        </productEffect>
+        <InitProdChance>0.8</InitProdChance>
+        <LowDemThresh>5.0</LowDemThresh>
+        <LowDemProdChance>0.001</LowDemProdChance>
+        <SweetDemThresh>6.0</SweetDemThresh>
+        <SweetDemStartChance>0.001</SweetDemStartChance>
+        <HiDemCutoff>20.0</HiDemCutoff>
+        <HiDemProdChance>0.001</HiDemProdChance>
+      </Agend>
+      <Agend id="3">
+        <productionMode>false</productionMode>
+        <productionCost>0</productionCost>
+        <productPrice>0</productPrice>
+        <maxUnsold>100</maxUnsold>
+        <productExpiry>1000</productExpiry>
+        <productEffect>
+          <parameter>None</parameter>
+          <factor>1.1</factor>
+          <duration>100</duration>
+        </productEffect>
+        <InitProdChance>0.8</InitProdChance>
+        <LowDemThresh>5.0</LowDemThresh>
+        <LowDemProdChance>0.001</LowDemProdChance>
+        <SweetDemThresh>6.0</SweetDemThresh>
+        <SweetDemStartChance>0.001</SweetDemStartChance>
+        <HiDemCutoff>20.0</HiDemCutoff>
+        <HiDemProdChance>0.001</HiDemProdChance>
+      </Agend>
+      <Agend id="4">
+        <productionMode>false</productionMode>
+        <productionCost>0</productionCost>
+        <productPrice>0</productPrice>
+        <maxUnsold>100</maxUnsold>
+        <productExpiry>1000</productExpiry>
+        <productEffect>
+          <parameter>None</parameter>
+          <factor>1.1</factor>
+          <duration>100</duration>
+        </productEffect>
+        <InitProdChance>0.8</InitProdChance>
+        <LowDemThresh>5.0</LowDemThresh>
+        <LowDemProdChance>0.001</LowDemProdChance>
+        <SweetDemThresh>6.0</SweetDemThresh>
+        <SweetDemStartChance>0.001</SweetDemStartChance>
+        <HiDemCutoff>20.0</HiDemCutoff>
+        <HiDemProdChance>0.001</HiDemProdChance>
+      </Agend>
+    </AgentParams>
+  </Production>
+  <Disease>
+    <AgentParams>
+      <Agend id="1">
+        <initialInfection>0.02</initialInfection>
+        <initialVaccination>0.0</initialVaccination>
+        <contactTransmitRate>0.3</contactTransmitRate>
+        <childTransmitRate>1.0</childTransmitRate>
+        <parameter>StepEnergy</parameter>
+        <factor>0.5</factor>
+        <vaccinator>false</vaccinator>
+        <vaccineEffectiveness>1.0</vaccineEffectiveness>
+        <healer>false</healer>
+        <healerEffectiveness>1.0</healerEffectiveness>
+        <recoveryTime>1000000</recoveryTime>
+        <transmitTo>
+          <Agent id="1">false</Agent>
+          <Agent id="2">false</Agent>
+          <Agent id="3">false</Agent>
+          <Agent id="4">false</Agent>
+        </transmitTo>
+        <heal>
+          <Agent id="1">false</Agent>
+          <Agent id="2">false</Agent>
+          <Agent id="3">false</Agent>
+          <Agent id="4">false</Agent>
+        </heal>
+        <vaccinate>
+          <Agent id="1">false</Agent>
+          <Agent id="2">false</Agent>
+          <Agent id="3">false</Agent>
+          <Agent id="4">false</Agent>
+        </vaccinate>
+        <wearingPPE>false</wearingPPE>
+        <ppeEffectiveness>0.0</ppeEffectiveness>
+      </Agend>
+      <Agend id="2">
+        <initialInfection>0.05</initialInfection>
+        <initialVaccination>0.0</initialVaccination>
+        <contactTransmitRate>0.17</contactTransmitRate>
+        <childTransmitRate>1.0</childTransmitRate>
+        <parameter>StepEnergy</parameter>
+        <factor>0.94</factor>
+        <vaccinator>false</vaccinator>
+        <vaccineEffectiveness>1.0</vaccineEffectiveness>
+        <healer>false</healer>
+        <healerEffectiveness>1.0</healerEffectiveness>
+        <recoveryTime>1000000</recoveryTime>
+        <transmitTo>
+          <Agent id="1">false</Agent>
+          <Agent id="2">false</Agent>
+          <Agent id="3">false</Agent>
+          <Agent id="4">false</Agent>
+        </transmitTo>
+        <heal>
+          <Agent id="1">false</Agent>
+          <Agent id="2">false</Agent>
+          <Agent id="3">false</Agent>
+          <Agent id="4">false</Agent>
+        </heal>
+        <vaccinate>
+          <Agent id="1">false</Agent>
+          <Agent id="2">false</Agent>
+          <Agent id="3">false</Agent>
+          <Agent id="4">false</Agent>
+        </vaccinate>
+        <wearingPPE>false</wearingPPE>
+        <ppeEffectiveness>0.0</ppeEffectiveness>
+      </Agend>
+      <Agend id="3">
+        <initialInfection>1.0</initialInfection>
+        <initialVaccination>0.0</initialVaccination>
+        <contactTransmitRate>0.05</contactTransmitRate>
+        <childTransmitRate>1.0</childTransmitRate>
+        <parameter>None</parameter>
+        <factor>0.0</factor>
+        <vaccinator>false</vaccinator>
+        <vaccineEffectiveness>1.0</vaccineEffectiveness>
+        <healer>false</healer>
+        <healerEffectiveness>1.0</healerEffectiveness>
+        <recoveryTime>1000000</recoveryTime>
+        <transmitTo>
+          <Agent id="1">false</Agent>
+          <Agent id="2">true</Agent>
+          <Agent id="3">true</Agent>
+          <Agent id="4">true</Agent>
+        </transmitTo>
+        <heal>
+          <Agent id="1">false</Agent>
+          <Agent id="2">false</Agent>
+          <Agent id="3">false</Agent>
+          <Agent id="4">false</Agent>
+        </heal>
+        <vaccinate>
+          <Agent id="1">false</Agent>
+          <Agent id="2">false</Agent>
+          <Agent id="3">false</Agent>
+          <Agent id="4">false</Agent>
+        </vaccinate>
+        <wearingPPE>false</wearingPPE>
+        <ppeEffectiveness>0.0</ppeEffectiveness>
+      </Agend>
+      <Agend id="4">
+        <initialInfection>0.05</initialInfection>
+        <initialVaccination>0.0</initialVaccination>
+        <contactTransmitRate>0.33</contactTransmitRate>
+        <childTransmitRate>1.0</childTransmitRate>
+        <parameter>StepEnergy</parameter>
+        <factor>0.95</factor>
+        <vaccinator>false</vaccinator>
+        <vaccineEffectiveness>1.0</vaccineEffectiveness>
+        <healer>false</healer>
+        <healerEffectiveness>1.0</healerEffectiveness>
+        <recoveryTime>1000000</recoveryTime>
+        <transmitTo>
+          <Agent id="1">false</Agent>
+          <Agent id="2">false</Agent>
+          <Agent id="3">false</Agent>
+          <Agent id="4">false</Agent>
+        </transmitTo>
+        <heal>
+          <Agent id="1">false</Agent>
+          <Agent id="2">false</Agent>
+          <Agent id="3">false</Agent>
+          <Agent id="4">false</Agent>
+        </heal>
+        <vaccinate>
+          <Agent id="1">false</Agent>
+          <Agent id="2">false</Agent>
+          <Agent id="3">false</Agent>
+          <Agent id="4">false</Agent>
+        </vaccinate>
+        <wearingPPE>false</wearingPPE>
+        <ppeEffectiveness>0.0</ppeEffectiveness>
+      </Agend>
+    </AgentParams>
+  </Disease>
+  <Toxin>
+    <AgentParams>
+      <Agend id="1">
+        <initialToxicity>0.0</initialToxicity>
+        <toxicityThreshold>1.0</toxicityThreshold>
+        <toxicityEffect>-1.0</toxicityEffect>
+        <parameter>None</parameter>
+        <foodToxicity>
+          <food id="1">0.0</food>
+          <food id="2">0.0</food>
+          <food id="3">0.0</food>
+          <food id="4">0.0</food>
+        </foodToxicity>
+        <agentToxicityTransfer>
+          <agent id="1">0.0</agent>
+          <agent id="2">0.0</agent>
+          <agent id="3">0.0</agent>
+          <agent id="4">0.0</agent>
+        </agentToxicityTransfer>
+        <childToxicityTransfer>0.1</childToxicityTransfer>
+        <toxicityPurgeRate>0.0</toxicityPurgeRate>
+      </Agend>
+      <Agend id="2">
+        <initialToxicity>0.0</initialToxicity>
+        <toxicityThreshold>1.0</toxicityThreshold>
+        <toxicityEffect>-1.0</toxicityEffect>
+        <parameter>None</parameter>
+        <foodToxicity>
+          <food id="1">0.0</food>
+          <food id="2">0.0</food>
+          <food id="3">0.0</food>
+          <food id="4">0.0</food>
+        </foodToxicity>
+        <agentToxicityTransfer>
+          <agent id="1">0.0</agent>
+          <agent id="2">0.0</agent>
+          <agent id="3">0.0</agent>
+          <agent id="4">0.0</agent>
+        </agentToxicityTransfer>
+        <childToxicityTransfer>0.1</childToxicityTransfer>
+        <toxicityPurgeRate>0.0</toxicityPurgeRate>
+      </Agend>
+      <Agend id="3">
+        <initialToxicity>0.0</initialToxicity>
+        <toxicityThreshold>1.0</toxicityThreshold>
+        <toxicityEffect>-1.0</toxicityEffect>
+        <parameter>None</parameter>
+        <foodToxicity>
+          <food id="1">0.0</food>
+          <food id="2">0.0</food>
+          <food id="3">0.0</food>
+          <food id="4">0.0</food>
+        </foodToxicity>
+        <agentToxicityTransfer>
+          <agent id="1">0.0</agent>
+          <agent id="2">0.0</agent>
+          <agent id="3">0.0</agent>
+          <agent id="4">0.0</agent>
+        </agentToxicityTransfer>
+        <childToxicityTransfer>0.1</childToxicityTransfer>
+        <toxicityPurgeRate>0.0</toxicityPurgeRate>
+      </Agend>
+      <Agend id="4">
+        <initialToxicity>0.0</initialToxicity>
+        <toxicityThreshold>1.0</toxicityThreshold>
+        <toxicityEffect>-1.0</toxicityEffect>
+        <parameter>None</parameter>
+        <foodToxicity>
+          <food id="1">0.0</food>
+          <food id="2">0.0</food>
+          <food id="3">0.0</food>
+          <food id="4">0.0</food>
+        </foodToxicity>
+        <agentToxicityTransfer>
+          <agent id="1">0.0</agent>
+          <agent id="2">0.0</agent>
+          <agent id="3">0.0</agent>
+          <agent id="4">0.0</agent>
+        </agentToxicityTransfer>
+        <childToxicityTransfer>0.1</childToxicityTransfer>
+        <toxicityPurgeRate>0.0</toxicityPurgeRate>
+      </Agend>
+    </AgentParams>
+  </Toxin>
+  <ga>
+    <geneLength>8</geneLength>
+    <meiosismode>Colour Averaging</meiosismode>
+    <AgentParams>
+      <Agend id="1"/>
+      <Agend id="2"/>
+      <Agend id="3"/>
+      <Agend id="4"/>
+    </AgentParams>
+  </ga>
+  <ControllerConfig class="org.cobweb.cobweb2.impl.ai.GeneticControllerParams">
+    <AgentParams>
+      <Agend id="1">
+        <RandomSeed>78887</RandomSeed>
+        <MutationRate>0.05</MutationRate>
+        <MemoryBits>2</MemoryBits>
+        <CommunicationBits>2</CommunicationBits>
+        <StateSize>
+          <State Name="Production Value">0</State>
+          <State Name="Swarm 1 Benefit">0</State>
+          <State Name="Swarm 2 Benefit">0</State>
+          <State Name="Swarm 3 Benefit">0</State>
+          <State Name="Swarm 4 Benefit">0</State>
+          <State Name="Abiotic 1 Penalty">0</State>
+          <State Name="Abiotic 2 Penalty">0</State>
+        </StateSize>
+      </Agend>
+      <Agend id="2">
+        <RandomSeed>51881</RandomSeed>
+        <MutationRate>0.05</MutationRate>
+        <MemoryBits>2</MemoryBits>
+        <CommunicationBits>2</CommunicationBits>
+        <StateSize>
+          <State Name="Production Value">0</State>
+          <State Name="Swarm 1 Benefit">0</State>
+          <State Name="Swarm 2 Benefit">0</State>
+          <State Name="Swarm 3 Benefit">0</State>
+          <State Name="Swarm 4 Benefit">0</State>
+          <State Name="Abiotic 1 Penalty">0</State>
+          <State Name="Abiotic 2 Penalty">0</State>
+        </StateSize>
+      </Agend>
+      <Agend id="3">
+        <RandomSeed>47461</RandomSeed>
+        <MutationRate>0.05</MutationRate>
+        <MemoryBits>2</MemoryBits>
+        <CommunicationBits>2</CommunicationBits>
+        <StateSize>
+          <State Name="Production Value">0</State>
+          <State Name="Swarm 1 Benefit">0</State>
+          <State Name="Swarm 2 Benefit">0</State>
+          <State Name="Swarm 3 Benefit">0</State>
+          <State Name="Swarm 4 Benefit">0</State>
+          <State Name="Abiotic 1 Penalty">0</State>
+          <State Name="Abiotic 2 Penalty">0</State>
+        </StateSize>
+      </Agend>
+      <Agend id="4">
+        <RandomSeed>58310</RandomSeed>
+        <MutationRate>0.05</MutationRate>
+        <MemoryBits>2</MemoryBits>
+        <CommunicationBits>2</CommunicationBits>
+        <StateSize>
+          <State Name="Production Value">0</State>
+          <State Name="Swarm 1 Benefit">0</State>
+          <State Name="Swarm 2 Benefit">0</State>
+          <State Name="Swarm 3 Benefit">0</State>
+          <State Name="Swarm 4 Benefit">0</State>
+          <State Name="Abiotic 1 Penalty">0</State>
+          <State Name="Abiotic 2 Penalty">0</State>
+        </StateSize>
+      </Agend>
+    </AgentParams>
+  </ControllerConfig>
+  <Learning>
+    <AgentParams>
+      <Agend id="1">
+        <enabled>false</enabled>
+        <learningMemoryDuration>20</learningMemoryDuration>
+        <learningCycle>10</learningCycle>
+        <learningWeighting>0.1</learningWeighting>
+        <learningAdjustmentStrength>0.3</learningAdjustmentStrength>
+      </Agend>
+      <Agend id="2">
+        <enabled>false</enabled>
+        <learningMemoryDuration>20</learningMemoryDuration>
+        <learningCycle>10</learningCycle>
+        <learningWeighting>0.1</learningWeighting>
+        <learningAdjustmentStrength>0.3</learningAdjustmentStrength>
+      </Agend>
+      <Agend id="3">
+        <enabled>false</enabled>
+        <learningMemoryDuration>20</learningMemoryDuration>
+        <learningCycle>10</learningCycle>
+        <learningWeighting>0.1</learningWeighting>
+        <learningAdjustmentStrength>0.3</learningAdjustmentStrength>
+      </Agend>
+      <Agend id="4">
+        <enabled>false</enabled>
+        <learningMemoryDuration>20</learningMemoryDuration>
+        <learningCycle>10</learningCycle>
+        <learningWeighting>0.1</learningWeighting>
+        <learningAdjustmentStrength>0.3</learningAdjustmentStrength>
+      </Agend>
+    </AgentParams>
+  </Learning>
+  <Personalities>
+    <enable>false</enable>
+    <temptation>20</temptation>
+    <reward>10</reward>
+    <punishment>0</punishment>
+    <sucker>-5</sucker>
+    <AgentParams>
+      <Agend id="1">
+        <PersonalitiesEnabled>false</PersonalitiesEnabled>
+        <Agreeableness>0.0</Agreeableness>
+        <Consciousness>0.0</Consciousness>
+        <Openness>0.0</Openness>
+        <Neuroticism>0.0</Neuroticism>
+        <Extroversion>0.0</Extroversion>
+      </Agend>
+      <Agend id="2">
+        <PersonalitiesEnabled>false</PersonalitiesEnabled>
+        <Agreeableness>0.0</Agreeableness>
+        <Consciousness>0.0</Consciousness>
+        <Openness>0.0</Openness>
+        <Neuroticism>0.0</Neuroticism>
+        <Extroversion>0.0</Extroversion>
+      </Agend>
+      <Agend id="3">
+        <PersonalitiesEnabled>false</PersonalitiesEnabled>
+        <Agreeableness>0.0</Agreeableness>
+        <Consciousness>0.0</Consciousness>
+        <Openness>0.0</Openness>
+        <Neuroticism>0.0</Neuroticism>
+        <Extroversion>0.0</Extroversion>
+      </Agend>
+      <Agend id="4">
+        <PersonalitiesEnabled>false</PersonalitiesEnabled>
+        <Agreeableness>0.0</Agreeableness>
+        <Consciousness>0.0</Consciousness>
+        <Openness>0.0</Openness>
+        <Neuroticism>0.0</Neuroticism>
+        <Extroversion>0.0</Extroversion>
+      </Agend>
+    </AgentParams>
+  </Personalities>
+  <Fusion>
+    <AgentParams>
+      <Agend id="1">
+        <fusionEnabled>false</fusionEnabled>
+        <fusionEfficiency>1.0</fusionEfficiency>
+        <fusionProb>0.0</fusionProb>
+        <fusionSameType>false</fusionSameType>
+      </Agend>
+      <Agend id="2">
+        <fusionEnabled>false</fusionEnabled>
+        <fusionEfficiency>1.0</fusionEfficiency>
+        <fusionProb>0.0</fusionProb>
+        <fusionSameType>false</fusionSameType>
+      </Agend>
+      <Agend id="3">
+        <fusionEnabled>false</fusionEnabled>
+        <fusionEfficiency>1.0</fusionEfficiency>
+        <fusionProb>0.0</fusionProb>
+        <fusionSameType>false</fusionSameType>
+      </Agend>
+      <Agend id="4">
+        <fusionEnabled>false</fusionEnabled>
+        <fusionEfficiency>1.0</fusionEfficiency>
+        <fusionProb>0.0</fusionProb>
+        <fusionSameType>false</fusionSameType>
+      </Agend>
+    </AgentParams>
+  </Fusion>
+  <Gravity>
+    <gravityEnabled>false</gravityEnabled>
+    <gravityStrength>600.0</gravityStrength>
+    <GravityParams>
+      <Gravity id="1">
+        <mass>10</mass>
+      </Gravity>
+      <Gravity id="2">
+        <mass>0</mass>
+      </Gravity>
+      <Gravity id="3">
+        <mass>1</mass>
+      </Gravity>
+      <Gravity id="4">
+        <mass>0</mass>
+      </Gravity>
+    </GravityParams>
+  </Gravity>
+</COBWEB2Config>
