@@ -1,2 +1,11 @@
-# ozone-lifespan-dataset
-Dataset used for the research paper "Ground-Level Ozone's Impact on Human Health in Terms of Respiratory Diseases Using Reactive Oxygen Species as an Inflammatory Marker"
+# Ground-Level Ozone's Impact on Human Health in Terms of Respiratory Diseases Using Reactive Oxygen Species as an Inflammatory Marker
+Background: Ozone accumulation over time in the human body due to climate change exacerbates existing respiratory diseases and magnifies its negative consequences on human health. Ground-level ozone is artificially produced by catalyzing nitrogen oxides (NOx) and volatile organic compounds (VOCs). Usually, antioxidants in the human body are sufficient to neutralize the particles, but that ability is reduced when an individual has pre-existing respiratory diseases. Under these circumstances, ozone interacts with various proteins and lipids in the lower respiratory tract, damaging epithelial cells, producing an excess of reactive oxygen species (ROS) and causing symptoms such as inflammation and airway constriction.
+
+Methods: This study explores the impact of ozone on human health through a representative simulation model that captures the cumulative impact of ground-level ozone on the human lung, including considerations of existing respiratory diseases with ROS as an inflammatory marker. Within the simulation, agents are used to represent oxygen and carbon dioxide, ozone, and physiological saline, with a controlled spread of disease between the agents suggesting the creation of ROS. Used in conjunction with other equations, the model gives a quantitative prediction of the theoretical lifespan of a person under varying ozone concentrations.
+
+Results: This study has found that there is a negative correlation between ozone concentration and average lifespan, starting at 114.33 years of life when ozone concentration is at an ambitious low of 0 ppb and quickly increasing to 52.26 years of life when reaching a high of 100 ppb. Linearly, the average human lifespan decreases by 0.621 years per every 1 ppb increase in ozone concentration. More accurately, an exponential regression can be derived from the results as the line of best fit, with an equation of y = 112.08e-0.008x and an R2 value of 0.995.
+
+Conclusions: Overall, this study proves that ozone has detrimental impacts on human health in terms of exacerbating pre-existing respiratory diseases, using quantitative data and with ROS as an inflammatory marker.
+
+Keywords: Ground-level ozone, Modelling, COBWEB, Reactive oxygen species, Environmental science, Health science, Inflammatory marker, Respiratory diseases, Mortality rates, Air pollution
+
